@@ -3,7 +3,7 @@
 
 ## Objetivo
 
-Maquetar la web **Pinterest**, este es el resultado final:
+Maquetar  la web **Pinterest**, este es el resultado final:
 
 ![Coders](assets/images/pinterest.jpg) 
 
