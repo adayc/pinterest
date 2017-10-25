@@ -5,77 +5,72 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   font-family: courier;
+  font-family: 'Source Sans Pro', sans-serif;
   margin: 0;
   padding: 0; /*Otorgamos margin y padding con valor 0*/
-  font-family: 'Source Sans Pro', sans-serif;
-}
-
-
-
-
-header {
-  position: fixed;
-  background-color: #fff;
-  width: 100%;
-  top: 0;
-  left:100px;
-  padding: 0;
-  z-index: 1000;
-  outline: solid 1px purple;  
-}
-
-
-
-.menu img{
- 
-  height: 25px;
   
+}
+
+
+
+/*Declaramos el header de manera fija con un z-index igual a 1000 para que se superponga sobre lo demás*/
+header {
+  background-color: #fff;
+  left:80px;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+ 
+}
+
+
+/*Declaramos la altura para nuestro logo de pinterest*/
+.menu img{
+  height: 25px;
   width:25px;
  
 }
 
-
-
-
-
-
+/*Ponemos de modo inline-block a nuestro menú y sub mebú*/
 .menu, .sub-menu {
-  
   display: inline-block;
 }
 
 .menu {
-width: 100%;
+
 display: inline-block;
 margin: 0;
+width: 100%;
 }
 
+/*Alineamo los iconos del header*/
 .menu .icon-user, .icon-bubble, .icon-menu {
-  margin-right: 30px;
-  font-size: 20px;
+  
   color: #b5b5b5;
+  font-size: 20px;
+  margin-left: 40px;
+  
 }
 
 
 #search  {
+  display: inline-block;
+  height: 60px;
   margin: 0px;
   padding:5px 0px 5px 0px;
-  display: inline-block;
-  width:900px;
-  
-  height: 60px;
-  outline: solid1 1px red;
   text-align: right;
-  
+  width:900px;
 }
 
+/*Damos formato a nuestro input text*/
 input{
   border-radius: 5px;
+  background-color: #efefef;
+  margin:0px;
   padding:5px 0px 5px 0px;
   width:80%;
-  margin:0px;
-  background-color: #efefef;
-  
   
 }
 
@@ -84,97 +79,71 @@ hr {
   margin-bottom: 0;
 }
 
+/*Declaramos la fuente para nuestro submenu*/
 .sub-menu {
-  font-size: 18px;
-  width: 100%;
+  font-size: 16px;
   padding-bottom: 0;
+  width: 100%;
+  
 }
 
 
 .sub-menu div {
+  border-radius: 8px;
   display: inline-block;
   height: 60px;
-  border-radius: 8px;
-  text-align: center;
   margin: 5px 10px;
   position: relative;
+  
 }
 
-
+/*Le quitamos el list-style a la lista desordenada y centramos el contenido*/
 .sub-menu ul div li {
-   position: absolute;
-   left: 20px;
-   bottom: 15px;
    color: #fff;
+   font-weight:bold;
+   height: 50%;
    list-style:none;
+   position: relative;
+   text-align: center;
+   transform: translateY(50%);
+   
+   
 }
 
-.buttom-one {
-  width: 150px;
-  background-color: #745060;  
+/*Declaramos la clase del boton con una imagen de fondo*/
+.buttom {
+  
+  background-image:url(../assets/images/buttom.jpg); 
+  background-repeat: no-repeat;
+  width: 8%;
 }
 
-.buttom-two {
-  background-color:#ab8b6f;
-  width: 110px;
-}
-
-.buttom-three {
-  background-color: #88735d;
-  width: 80px;
-}
-
-.buttom-four {
-  background-color: #8e6e52;
-  width: 80px;
-}
-
-.buttom-five {
-  background-color: #9b944b;
-  width: 150px;
-}
-
-.buttom-six {
-  background-color: #82725a;
-  width: 100px;
-}
-
-.buttom-seven {
-  background-color: #888081;
-  width: 80px;
-}
-
-.buttom-eight {
-  background-color: #9a775b;
-  width: 100px;
-}
-
-.buttom-nine {
-  background-color: #af7f74;
-  width: 100px;
-}
-
+/*El main tendrá el contenido de cada clase column */
 main {
-  position: relative;
-  width: 100%;
-  padding:0px 20px 0px 20px;
-  top:125px;
-  outline: 1px solid green;
+  left: 45px;
   margin: 0px;
+  padding:0px 20px 0px 20px;
+  position: relative;
+  top:140px;
+  width: 100%;
+ 
+  
+  
 }
 
+/*La clase column contenrá cada columna de 3 fotos*/
 .column{
   width: 18%;
   float: left;
-  margin:0px;
+  margin:0px 5px 0px 5px;
   padding:0px;
-  outline: 1px solid red;
+  
 }
 
 .column figure img {
-  /*outline: 1px solid orange; */
-  width: 100%;
   border-radius: 20px;
+  width: 100%;
+  
 }
 
 figure a {
@@ -182,39 +151,36 @@ text-decoration: none;
 color: #000;
 }
 
-h4 {
-  display: inline-block;
-  margin-right: 200px;
-  margin-bottom: 5px;
+h4{
+  display:inline-block;
 }
 
 .text p{
-  width:70%;
+  width:100%;
   margin-top: 10px;
+  text-align:left;
 }
 .icon-pushpin, .icon-checkmark {
   font-size: 10px;
-  color: gray;
+  color:#686868;
 }
 
 
-.user-letter {
+/*Colocaremos la inicial de nuestro usuario en esta clase*/
+.circle {
+  
+  background-color:#d597a1;
+  border-radius: 50%;
+  text-align: center;
+  display: inline-block;
   color: #fff;
   font-size: 15px;
   font-weight: bold;
   position: relative;
   top:4px;
+  padding:2px 6px;
 }
-
-.circle {
-  width: 30px;
-  height: 30px;
-  background-color: #d597a1;
-  border-radius: 50%;
-  text-align: center;
-  display: inline-block;
-}
-
+/*Colocaremos el nombre de nuestro usuario en esta clase*/
 .user-name  {
   position: relative;
   top: 6px;
