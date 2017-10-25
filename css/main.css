@@ -7,61 +7,223 @@
   font-family: courier;
   margin: 0;
   padding: 0; /*Otorgamos margin y padding con valor 0*/
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 
-/*---Colocamos el título al proyecto---*/
-h1{
-	font-weight: bold;
-	font-size: 14pt;
-  margin-left:390px;	
-  width: 15%;
-}
 
 
-ul{
-	list-style: none; /*Eliminamos las viñetas de las listas donde colocaremos las imagenes*/
-}
-
-li{
-  display: inline-block;
- 	margin: 10px;
-	padding: 10px;
-	position: relative; /*Posicionamos en modo relativo para que sus "hijos" puedan ser posicionados */
-	
-}
-
-/*Definimos el tamaño para las imagenes*/
-img{
-  
-  height: 200px;
-  width: 150px; 
-	
-}
-
-p{
-  bottom: 20px;
-	color: rgb(204, 195, 195);
-  font-size: 11pt;
-  font-weight: bold;
-  left: 30px;
-	margin: 0px;
-	position: absolute;
-	right: 15px;
-}
-
-
-.block{
-  margin: 0px;
-	padding: 10px;
-  text-align: center;
+header {
+  position: fixed;
+  background-color: #fff;
   width: 100%;
-
+  top: 0;
+  left:100px;
+  padding: 0;
+  z-index: 1000;
+  outline: solid 1px purple;  
 }
 
-.border{
-  border: 2px solid #000;
-  margin-left:29%;
-	width:5%;
-	
+
+
+.menu img{
+ 
+  height: 25px;
+  
+  width:25px;
+ 
+}
+
+
+
+
+
+
+.menu, .sub-menu {
+  
+  display: inline-block;
+}
+
+.menu {
+width: 100%;
+display: inline-block;
+margin: 0;
+}
+
+.menu .icon-user, .icon-bubble, .icon-menu {
+  margin-right: 30px;
+  font-size: 20px;
+  color: #b5b5b5;
+}
+
+
+#search  {
+  margin: 0px;
+  padding:5px 0px 5px 0px;
+  display: inline-block;
+  width:900px;
+  
+  height: 60px;
+  outline: solid1 1px red;
+  text-align: right;
+  
+}
+
+input{
+  border-radius: 5px;
+  padding:5px 0px 5px 0px;
+  width:80%;
+  margin:0px;
+  background-color: #efefef;
+  
+  
+}
+
+
+hr {
+  margin-bottom: 0;
+}
+
+.sub-menu {
+  font-size: 18px;
+  width: 100%;
+  padding-bottom: 0;
+}
+
+
+.sub-menu div {
+  display: inline-block;
+  height: 60px;
+  border-radius: 8px;
+  text-align: center;
+  margin: 5px 10px;
+  position: relative;
+}
+
+
+.sub-menu ul div li {
+   position: absolute;
+   left: 20px;
+   bottom: 15px;
+   color: #fff;
+   list-style:none;
+}
+
+.buttom-one {
+  width: 150px;
+  background-color: #745060;  
+}
+
+.buttom-two {
+  background-color:#ab8b6f;
+  width: 110px;
+}
+
+.buttom-three {
+  background-color: #88735d;
+  width: 80px;
+}
+
+.buttom-four {
+  background-color: #8e6e52;
+  width: 80px;
+}
+
+.buttom-five {
+  background-color: #9b944b;
+  width: 150px;
+}
+
+.buttom-six {
+  background-color: #82725a;
+  width: 100px;
+}
+
+.buttom-seven {
+  background-color: #888081;
+  width: 80px;
+}
+
+.buttom-eight {
+  background-color: #9a775b;
+  width: 100px;
+}
+
+.buttom-nine {
+  background-color: #af7f74;
+  width: 100px;
+}
+
+main {
+  position: relative;
+  width: 100%;
+  padding:0px 20px 0px 20px;
+  top:125px;
+  outline: 1px solid green;
+  margin: 0px;
+}
+
+.column{
+  width: 18%;
+  float: left;
+  margin:0px;
+  padding:0px;
+  outline: 1px solid red;
+}
+
+.column figure img {
+  /*outline: 1px solid orange; */
+  width: 100%;
+  border-radius: 20px;
+}
+
+figure a {
+text-decoration: none;
+color: #000;
+}
+
+h4 {
+  display: inline-block;
+  margin-right: 200px;
+  margin-bottom: 5px;
+}
+
+.text p{
+  width:70%;
+  margin-top: 10px;
+}
+.icon-pushpin, .icon-checkmark {
+  font-size: 10px;
+  color: gray;
+}
+
+
+.user-letter {
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  position: relative;
+  top:4px;
+}
+
+.circle {
+  width: 30px;
+  height: 30px;
+  background-color: #d597a1;
+  border-radius: 50%;
+  text-align: center;
+  display: inline-block;
+}
+
+.user-name  {
+  position: relative;
+  top: 6px;
+  font-weight: bold;
+}
+
+.hashtag {
+  display: block;
+  position: relative;
+  left: 35px;
+  z-index: inherit;
 }

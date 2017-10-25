@@ -1,1 +1,1 @@
-alert('Bienvenido a la web de Nuestras Coders');
+alert('Bienvenido a la web de Pinterest');
