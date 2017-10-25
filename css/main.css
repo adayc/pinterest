@@ -1,0 +1,67 @@
+
+/*Los prefijos -webkit y -moz se colocan para que enuestro código sea compatible con las diferentes versiones de los navegadores*/
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: courier;
+  margin: 0;
+  padding: 0; /*Otorgamos margin y padding con valor 0*/
+}
+
+
+/*---Colocamos el título al proyecto---*/
+h1{
+	font-weight: bold;
+	font-size: 14pt;
+  margin-left:390px;	
+  width: 15%;
+}
+
+
+ul{
+	list-style: none; /*Eliminamos las viñetas de las listas donde colocaremos las imagenes*/
+}
+
+li{
+  display: inline-block;
+ 	margin: 10px;
+	padding: 10px;
+	position: relative; /*Posicionamos en modo relativo para que sus "hijos" puedan ser posicionados */
+	
+}
+
+/*Definimos el tamaño para las imagenes*/
+img{
+  
+  height: 200px;
+  width: 150px; 
+	
+}
+
+p{
+  bottom: 20px;
+	color: rgb(204, 195, 195);
+  font-size: 11pt;
+  font-weight: bold;
+  left: 30px;
+	margin: 0px;
+	position: absolute;
+	right: 15px;
+}
+
+
+.block{
+  margin: 0px;
+	padding: 10px;
+  text-align: center;
+  width: 100%;
+
+}
+
+.border{
+  border: 2px solid #000;
+  margin-left:29%;
+	width:5%;
+	
+}
