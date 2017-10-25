@@ -1,11 +1,11 @@
-# Nuestras coders
+# Pinterest
 
 
 ## Objetivo
 
-Maquetar la web **Nuestras coders**, este es el resultado final:
+Maquetar la web **Pinterest**, este es el resultado final:
 
-![Coders](assets/images/img-nuestras-coders.png) 
+![Coders](assets/images/pinterest.jpg) 
 
 ## Detalles adicionales
 
